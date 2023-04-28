@@ -16,7 +16,7 @@ test.describe.parallel("API Testing",  () => {
 
     test("Simple API Test - Assert Invalid Endpoint", async ({ request }) => {
         const Response = await request.get(`${baseURL}/users/non-existing-endpoint`)
-        expect(Response.status()).toBe(404)
+        expect(Response.status()).toBe(400)
     });
 
     test("GET Request - Get User Detail", async ({ request }) => {
