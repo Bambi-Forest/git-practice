@@ -84,6 +84,7 @@ test.describe.parallel("API Testing",  () => {
 
               },
         })
+        
         const responseBody = JSON.parse(await response.text())
         //console.log(responseBody)
         expect(response.status()).toBe(200)
